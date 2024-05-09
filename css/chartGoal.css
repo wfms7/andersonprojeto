@@ -1,0 +1,71 @@
+.chart__container{
+    width: 90%;
+    margin: 1rem auto;
+    border: 2px var(--gray) solid;
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+.goal__container{
+
+    width: 90%;
+    margin: 1rem auto;
+    border: 2px var(--gray) solid;
+    border-radius: 10px;
+    padding: 0.8rem;
+    text-align: center;
+}
+.goal-info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.goal-info-titulo{
+    margin:1rem 0;
+}
+.goal-info-resul{
+    padding: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    border: var(--black) solid 1px;
+    border-radius: 10px;
+}
+
+.goal-img{
+    width: 70%;
+    margin: 1.5rem auto;
+}
+
+@media screen and (min-width: 820px) {
+    .chart-goal__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 200px;
+    }
+
+    .goal__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "meta meta meta"
+        "semana goalimg atual"
+        ;
+    }
+    .meta{
+        grid-area: meta;
+    }
+    .semana{
+        grid-area: semana;
+    }
+    .goalimg{
+        grid-area: goalimg;
+    }
+    .atual{
+        grid-area: atual;
+    }
+
+    .goal-info-resul{
+        width: 150px;
+    }
+
+}

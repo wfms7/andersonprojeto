@@ -1,0 +1,6 @@
+.info__container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 1rem auto;
+}

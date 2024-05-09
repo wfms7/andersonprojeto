@@ -1,0 +1,46 @@
+.header__container{
+    display: flex;
+    width: 95%;
+    height: 50px;
+    margin: 1rem auto;
+    border: var(--gray) solid 1px;
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.header__logo-ifood , .header__logo-company {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.header__logo-customer{
+    width: 24px;
+    height: 24px;
+}
+
+
+.header__texto{
+
+    display: none;
+}
+
+@media screen and (min-width: 820px) {
+    .header__container-ifood ,.header__container-company,.header__container-customer{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+    }
+    .header__logo-ifood{
+        width: 50px;
+        height: 50px;
+    }
+
+    .header__texto{
+
+        display: inline-block;
+    }
+}
